@@ -86,14 +86,14 @@ body {
 /* Enhanced padding for desktop */
 @media (min-width: 1024px) {
     .hero-content {
-        padding: 60px 0;
+        padding: 100px 0;
     }
 }
 
 /* Even more padding for larger screens */
 @media (min-width: 1400px) {
     .hero-content {
-        padding: 100px 0;
+        padding: 120px 0;
     }
 }
 
