@@ -38,8 +38,9 @@ body {
 /* Hero Section */
 .hero {
     position: relative;
-    height: 35vh;
+    height: 40vh;
     min-height: 400px;
+    max-height: 600px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -80,6 +81,20 @@ body {
     color: var(--white);
     max-width: 700px;
     padding: 40px 0;
+}
+
+/* Enhanced padding for desktop */
+@media (min-width: 1024px) {
+    .hero-content {
+        padding: 60px 0;
+    }
+}
+
+/* Even more padding for larger screens */
+@media (min-width: 1400px) {
+    .hero-content {
+        padding: 100px 0;
+    }
 }
 
 .hero-logo {
