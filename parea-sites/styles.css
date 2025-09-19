@@ -97,6 +97,13 @@ body {
     }
 }
 
+/* Reduced padding for mobile */
+@media (max-width: 768px) {
+    .hero-content {
+        padding: 28px 0;
+    }
+}
+
 .hero-logo {
     margin-bottom: 2rem;
 }
