@@ -1,0 +1,142 @@
+{
+  "restaurant": {
+    "id": "f3c4c917-f4ec-4440-b941-2b86f95e6c78",
+    "name": "Parea Express",
+    "logo_url": "https://wuufuewpbgciitslfvbl.supabase.co/storage/v1/object/public/restaurant-images/logos/1758125613859-logo",
+    "hero_image_url": "https://wuufuewpbgciitslfvbl.supabase.co/storage/v1/object/public/restaurant-images/hero/1758125614459-hero",
+    "address": "540 Montréal Rd, Ottawa, ON K1K 4R4",
+    "email": "nicolaskonsoulas@gmail.com",
+    "phone": "(613) 499-1010",
+    "website": "https://www.eatparea.com/",
+    "online_ordering_url": "https://pareaauthenticgreek.order-online.ai/#/",
+    "founded_year": "",
+    "story": "Parea Express – Fresh Greek Take-Out on Montreal Road\n\nAbout Us\nLife moves fast, but great food should always be simple and delicious. That’s why we created Parea Express on Montreal Road, Ottawa — a quick-service Greek counter offering take-out only. From warm gyro wraps and crisp salads to hearty platters, everything is made with the same high-quality ingredients and family recipes that Parea is known for.\n\nParea Express is perfect for busy lunch breaks, easy family dinners, or grabbing a fresh meal on your way home. With take-out and online ordering, we make it easy to enjoy authentic Greek flavours without slowing down your day.\n\nCatering in Ottawa\nNeed to feed a crowd? Our Greek catering in Ottawa is ideal for family gatherings, office events, or special occasions. Expect authentic dishes, generous portions, and fresh flavours — all prepared with the same care as if you were part of our family.",
+    "owner_quote": "",
+    "about_image_url": "https://wuufuewpbgciitslfvbl.supabase.co/storage/v1/object/public/restaurant-images/about/1758125615443-about",
+    "menu_pdf_url": "https://wuufuewpbgciitslfvbl.supabase.co/storage/v1/object/public/restaurant-pdfs/menus/1758125616338-menu",
+    "status": "submitted",
+    "created_at": "2025-09-17T16:13:53.577801+00:00",
+    "updated_at": "2025-09-17T16:13:53.577801+00:00"
+  },
+  "operations": {
+    "hours": "Monday: 11 a.m.– 9 p.m.\nTuesday: 11 a.m.– 9 p.m.\nWednesday: 11 a.m.– 9 p.m.\nThursday: 11 a.m.– 9 p.m.\nFriday: 11 a.m.– 9 p.m.\nSaturday: 11 a.m.– 9 p.m.\nSunday 11 a.m.– 9 p.m.\n",
+    "delivery_areas": "K1K, K1J, K1B, K1M, K1L",
+    "delivery_instructions": "Parea Express – Take-Out Made Simple\nLocated on Montréal Road, Parea Express is all about fresh, delicious Greek food on the go. Designed for take-out only, our counter service makes it easy to grab a quick meal without compromising on quality. Every dish is prepared with the same fresh ingredients and authentic recipes you know and love from Parea. Dedicated parking spots make pickup quick and convenient, so you can enjoy the flavours of Greece wherever you are."
+  },
+  "social_media": {
+    "instagram": "https://www.instagram.com/eat_parea/?hl=en",
+    "facebook": "https://www.facebook.com/PareaAuthenticGreek/",
+    "twitter": ""
+  },
+  "popular_dishes": [
+    {
+      "id": "a5c2f4b2-00dd-4c11-a839-5d75d8a6812d",
+      "name": "Grilled Kalamata Chicken",
+      "description": "Experience the vibrant flavours of our Grilled Kalamata Chicken — a tender chicken breast grilled to perfection, topped with crumbled feta, juicy tomatoes, and rich Kalamata olives. Paired with fragrant rice, roasted lemon potatoes, and a side of crisp vegetables, this dish is hearty, wholesome, and authentically Mediterranean. A must-try favourite for anyone craving the taste of Greece in Ottawa.",
+      "image_url": "https://wuufuewpbgciitslfvbl.supabase.co/storage/v1/object/public/restaurant-images/dishes/1758125629696-dish-0",
+      "display_order": 0
+    },
+    {
+      "id": "3987900d-8ed2-4b89-9772-31220f319480",
+      "name": "Pork & Chicken Gyro",
+      "description": "Taste tradition with our Pork & Chicken Gyro, where juicy pork and chicken are marinated and slow-roasted on the spit for incredible flavour. Wrapped in a fluffy pita and finished with fresh tomatoes, onions, and cool tzatziki, this dish is served with your choice of sides. It’s the perfect mix of savoury comfort and Greek authenticity — a street-food classic brought to Ottawa.",
+      "image_url": "https://wuufuewpbgciitslfvbl.supabase.co/storage/v1/object/public/restaurant-images/dishes/1758125630222-dish-1",
+      "display_order": 1
+    },
+    {
+      "id": "c4df7551-b1cf-4be9-8491-aecdacbf764b",
+      "name": "Horiatiki Greek Salad",
+      "description": "Fresh, colourful, and full of flavour — our Horiatiki Greek Salad combines crisp cucumbers, sweet tomatoes, red onions, green peppers, and creamy feta. Made without lettuce, this traditional salad highlights the simplicity and freshness of Greek cooking. Light yet satisfying, it’s an authentic taste of Greece and a favourite at our Ottawa table.",
+      "image_url": "https://wuufuewpbgciitslfvbl.supabase.co/storage/v1/object/public/restaurant-images/dishes/1758125630985-dish-2",
+      "display_order": 2
+    },
+    {
+      "id": "3a00d724-d897-42dc-b546-9d6c46d926a3",
+      "name": "Naxos Fish Plate",
+      "description": "Inspired by the shores of Greece, our Naxos Fish Plate showcases a golden, crispy fillet of fish paired with a fresh squeeze of lemon. Served alongside our Paréa salad, seasoned rice, and roasted garlic-lemon potatoes, this plate delivers a delicious balance of bright citrus, crunch, and hearty comfort — a seaside tradition you can savour in Ottawa.",
+      "image_url": "https://wuufuewpbgciitslfvbl.supabase.co/storage/v1/object/public/restaurant-images/dishes/1758125631534-dish-3",
+      "display_order": 3
+    },
+    {
+      "id": "72df9903-c4d0-44f6-a398-d484581f0e77",
+      "name": "Calamari",
+      "description": "Our Calamari is a Greek classic done right — tender rings lightly breaded, fried to a golden crisp, and seasoned to perfection. Served with our house-made tzatziki, this appetizer offers the perfect mix of crunch and creamy freshness. A crowd-pleasing favourite that’s always the perfect way to begin your meal.",
+      "image_url": "https://wuufuewpbgciitslfvbl.supabase.co/storage/v1/object/public/restaurant-images/dishes/1758125632077-dish-4",
+      "display_order": 4
+    }
+  ],
+  "deals": [
+    {
+      "id": "7eebba26-a46a-4bb4-8c6f-6fe8d8577bce",
+      "title": "Buy 1 Meal, Get 50% Off a Second Meal – Limited-Time Offer in Ottawa",
+      "description": "Enjoy authentic flavours for less! When you buy one regularly priced meal, you’ll receive a second meal of equal or lesser value for 50% off. Perfect for pickup and sharing with family or friends.\n\nBuy 1 regularly priced meal and get 1 of equal or lesser value (before tax) for half price. Limit 1 coupon per person. Not valid with any other offer. Pickup only. Expires December 30, 2025.",
+      "image_url": "https://wuufuewpbgciitslfvbl.supabase.co/storage/v1/object/public/restaurant-images/deals/1758125632667-deal-0",
+      "display_order": 0
+    }
+  ],
+  "photos": [
+    {
+      "id": "c03af525-61ac-4d35-a1f9-103706b0ff79",
+      "image_url": "https://wuufuewpbgciitslfvbl.supabase.co/storage/v1/object/public/restaurant-images/photos/1758125618515-photo-0",
+      "display_order": 0
+    },
+    {
+      "id": "7a09b247-1031-4bd6-aa15-67c520f8ab78",
+      "image_url": "https://wuufuewpbgciitslfvbl.supabase.co/storage/v1/object/public/restaurant-images/photos/1758125619169-photo-1",
+      "display_order": 1
+    },
+    {
+      "id": "68f14a97-a6a3-4f49-9aab-35cb354b13bc",
+      "image_url": "https://wuufuewpbgciitslfvbl.supabase.co/storage/v1/object/public/restaurant-images/photos/1758125619845-photo-2",
+      "display_order": 2
+    },
+    {
+      "id": "d4caca62-f069-40c2-acc7-78ac20a25d74",
+      "image_url": "https://wuufuewpbgciitslfvbl.supabase.co/storage/v1/object/public/restaurant-images/photos/1758125621894-photo-3",
+      "display_order": 3
+    },
+    {
+      "id": "0aaf5a5c-c243-46c9-9dd4-8d3854db8543",
+      "image_url": "https://wuufuewpbgciitslfvbl.supabase.co/storage/v1/object/public/restaurant-images/photos/1758125623773-photo-4",
+      "display_order": 4
+    },
+    {
+      "id": "5c5906d7-ab3d-443f-88ec-4ed1bd71f8d3",
+      "image_url": "https://wuufuewpbgciitslfvbl.supabase.co/storage/v1/object/public/restaurant-images/photos/1758125626535-photo-5",
+      "display_order": 5
+    },
+    {
+      "id": "b7f4249d-aa1d-4106-a1c8-5f37a39041ec",
+      "image_url": "https://wuufuewpbgciitslfvbl.supabase.co/storage/v1/object/public/restaurant-images/photos/1758125627227-photo-6",
+      "display_order": 6
+    },
+    {
+      "id": "ae52a386-6544-45dc-9442-66a0859af561",
+      "image_url": "https://wuufuewpbgciitslfvbl.supabase.co/storage/v1/object/public/restaurant-images/photos/1758125627758-photo-7",
+      "display_order": 7
+    },
+    {
+      "id": "65a30f71-f4e9-474d-adb0-6ff5655e8ebe",
+      "image_url": "https://wuufuewpbgciitslfvbl.supabase.co/storage/v1/object/public/restaurant-images/photos/1758125628242-photo-8",
+      "display_order": 8
+    },
+    {
+      "id": "7a9175cb-62ae-4b87-bf95-cd1a3471b93b",
+      "image_url": "https://wuufuewpbgciitslfvbl.supabase.co/storage/v1/object/public/restaurant-images/photos/1758125628910-photo-9",
+      "display_order": 9
+    }
+  ],
+  "additional_comments": "For the Parea Express location (540 Montréal Rd, Ottawa, ON K1K 4R4), the website should make it very clear that this is a take-out only counter. There is no dine-in or table reservation option. Customers should be guided directly toward the online ordering system for this location so the flow is fast and convenient.\n\nUnlike the Orléans restaurant, Express is all about quick, fresh, and delicious meals to-go, prepared with the same high-quality ingredients as Parea Orléans. The website should highlight that Express is ideal for busy customers who want authentic Greek food without the wait.\n\nWe don’t need a reservations section for this location, but the menu and ordering process should be simple and user-friendly to avoid any confusion with Orléans.",
+  "integration_instructions": {
+    "branding": "Use restaurant.logo_url for brand logo placement throughout the site",
+    "hero_image": "Use restaurant.hero_image_url as a banner/header image on your homepage for visual impact",
+    "ordering_platform": "Use restaurant.online_ordering_url for all 'Order Now' and 'View Menu' buttons",
+    "menu_display": "Use restaurant.menu_pdf_url for downloadable menu links",
+    "deals_promotion": "Feature deals prominently on homepage and dedicated deals page",
+    "note": "The online_ordering_url connects to your unified ordering platform backend"
+  },
+  "export_metadata": {
+    "exported_at": "2025-09-17T19:32:04.013Z",
+    "export_version": "1.1"
+  }
+}

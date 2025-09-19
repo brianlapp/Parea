@@ -1,0 +1,1131 @@
+/* Parea Express Styles - Streamlined for Take-Out Focus */
+
+/* CSS Variables - Express Blue Theme (matching Orleans) */
+:root {
+    --primary-color: #1e3a8a;         /* Greek blue primary */
+    --primary-dark: #1e40af;          /* Darker blue for hover */
+    --primary-light: #3b82f6;         /* Light blue accent */
+    --secondary-color: #f8fafc;       /* Light backgrounds */
+    --accent-color: #1e40af;          /* Blue accent for contrast */
+    --text-dark: #2c2c2c;             /* Primary text */
+    --text-gray: #666;                /* Secondary text */
+    --white: #ffffff;                 /* White backgrounds */
+    --border-color: #e5e7eb;          /* Light borders */
+    --shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+    --success-color: #059669;         /* Green for success */
+    --express-bg: linear-gradient(135deg, var(--primary-color), var(--primary-dark));
+}
+
+/* Reset and base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'DM Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    line-height: 1.6;
+    color: var(--text-dark);
+    background-color: var(--white);
+    overflow-x: hidden;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+/* Navigation - Express Theme */
+.navbar {
+    background: var(--primary-color);
+    box-shadow: var(--shadow);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    padding: 1rem 0;
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-brand img {
+    height: 50px;
+    width: auto;
+    filter: brightness(0) invert(1);
+}
+
+.nav-menu {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+}
+
+.nav-menu a {
+    text-decoration: none;
+    color: var(--white);
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.nav-menu a:hover {
+    color: var(--primary-light);
+}
+
+.nav-cta {
+    background: var(--white);
+    color: var(--primary-color) !important;
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+    font-weight: 600;
+}
+
+.nav-cta:hover {
+    background: var(--primary-light);
+    color: var(--white) !important;
+    transform: translateY(-1px);
+    box-shadow: var(--shadow);
+}
+
+.nav-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.nav-toggle span {
+    width: 25px;
+    height: 3px;
+    background: var(--white);
+    margin: 3px 0;
+    transition: 0.3s;
+}
+
+/* Hero Section - Express Focus */
+.hero {
+    position: relative;
+    height: 60vh;
+    min-height: 400px;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    margin-top: 70px;
+}
+
+.hero-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.hero-background img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2));
+    z-index: 2;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 3;
+    color: var(--white);
+    max-width: 600px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.hero-content h1 {
+    font-size: 4rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.hero-tagline {
+    font-size: 1.75rem;
+    font-weight: 300;
+    margin-bottom: 0.5rem;
+    opacity: 0.95;
+}
+
+.hero-description {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    opacity: 0.9;
+    font-weight: 500;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 2rem;
+}
+
+.hero-hours {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 1rem;
+    border-radius: 12px;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.hero-hours p {
+    font-size: 1.1rem;
+    margin: 0;
+}
+
+/* Quick Contact Bar - Express Enhanced */
+.quick-contact {
+    background: var(--secondary-color);
+    padding: 1rem 0;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.quick-contact-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    text-align: center;
+    flex-wrap: wrap;
+}
+
+.contact-item span {
+    color: var(--text-gray);
+    font-size: 0.9rem;
+}
+
+.contact-item a {
+    color: var(--primary-color);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.contact-item a:hover {
+    text-decoration: underline;
+}
+
+.express-highlight {
+    background: var(--primary-color);
+    color: var(--white) !important;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-weight: 500;
+}
+
+.express-highlight span {
+    color: var(--white) !important;
+    font-size: 0.85rem;
+}
+
+/* Section Spacing */
+.section {
+    padding: 4rem 0;
+}
+
+/* Alternating section backgrounds for visual separation */
+.deals,
+.about,
+.gallery {
+    background: #f1f5f9 !important; /* Light blue background */
+}
+
+@media (max-width: 768px) {
+    .section { padding: 3rem 0; }
+}
+
+/* Popular Dishes - Express with Order CTAs */
+.dishes {
+    background: var(--white);
+    padding: 4rem 0;
+}
+
+.dishes.boxed {
+    border-top: 1px solid var(--border-color);
+    border-bottom: 1px solid var(--border-color);
+}
+
+.dishes h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+
+.dishes-subtitle {
+    text-align: center;
+    font-size: 1.1rem;
+    color: var(--text-gray);
+    margin-bottom: 3rem;
+}
+
+.dishes-conveyor {
+    display: flex;
+    gap: 2rem;
+    overflow-x: auto;
+    padding: 1rem 0;
+    scroll-behavior: smooth;
+}
+
+.dish-card {
+    flex: 0 0 350px;
+    background: var(--white);
+    border-radius: 12px;
+    box-shadow: var(--shadow-lg);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    border: 2px solid transparent;
+}
+
+.dish-card:hover {
+    transform: translateY(-4px);
+    border-color: var(--primary-light);
+}
+
+.dish-image {
+    height: 200px;
+    overflow: hidden;
+    position: relative;
+}
+
+.dish-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.dish-card:hover .dish-image img {
+    transform: scale(1.05);
+}
+
+.dish-content {
+    padding: 1.5rem;
+}
+
+.dish-content h3 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: var(--primary-color);
+    margin-bottom: 0.75rem;
+}
+
+.dish-content p {
+    color: var(--text-gray);
+    font-size: 0.9rem;
+    line-height: 1.5;
+    margin-bottom: 1rem;
+}
+
+.dish-cta {
+    text-align: center;
+}
+
+.btn-small {
+    background: var(--express-bg);
+    color: var(--white);
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.9rem;
+    transition: all 0.3s ease;
+    display: inline-block;
+}
+
+.btn-small:hover {
+    transform: translateY(-1px);
+    box-shadow: var(--shadow);
+}
+
+/* Quick Order Section */
+.quick-order {
+    padding: 4rem 0;
+    background: var(--secondary-color);
+    text-align: center;
+}
+
+.quick-order h2 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: var(--primary-color);
+    margin-bottom: 3rem;
+}
+
+.order-steps {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-bottom: 3rem;
+}
+
+.step {
+    background: var(--white);
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: var(--shadow);
+    transition: transform 0.3s ease;
+}
+
+.step:hover {
+    transform: translateY(-4px);
+}
+
+.step-number {
+    width: 60px;
+    height: 60px;
+    background: var(--primary-color);
+    color: var(--white);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin: 0 auto 1rem;
+}
+
+.step h3 {
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+    font-size: 1.25rem;
+}
+
+.step p {
+    color: var(--text-gray);
+}
+
+.order-cta {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+/* Deals Section - Express Theme */
+.deals {
+    padding: 4rem 0;
+    background: var(--white);
+}
+
+.deals h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: var(--primary-color);
+    margin-bottom: 3rem;
+}
+
+.deals-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    gap: 2rem;
+}
+
+.deal-card {
+    background: var(--white);
+    border-radius: 12px;
+    box-shadow: var(--shadow-lg);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    border: 2px solid var(--primary-light);
+}
+
+.deal-card:hover {
+    transform: translateY(-4px);
+}
+
+.deal-image {
+    height: 250px;
+    overflow: hidden;
+}
+
+.deal-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.deal-content {
+    padding: 2rem;
+}
+
+.deal-content h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--primary-color);
+    margin-bottom: 0.5rem;
+}
+
+.deal-content h4 {
+    font-size: 1.1rem;
+    color: var(--text-gray);
+    margin-bottom: 1rem;
+}
+
+.deal-content p {
+    color: var(--text-gray);
+    margin-bottom: 1rem;
+    line-height: 1.6;
+}
+
+.deal-terms {
+    font-size: 0.85rem;
+    color: var(--text-gray);
+    border-top: 1px solid var(--border-color);
+    padding-top: 1rem;
+    margin-bottom: 1.5rem !important;
+}
+
+.deal-order-btn {
+    display: inline-block;
+    background: var(--express-bg);
+    color: var(--white);
+    padding: 0.75rem 1.5rem;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.deal-order-btn:hover {
+    transform: translateY(-1px);
+    box-shadow: var(--shadow);
+}
+
+/* Express Benefits Section */
+.express-benefits {
+    padding: 4rem 0;
+    background: var(--secondary-color);
+}
+
+.express-benefits.boxed {
+    border-top: 1px solid var(--border-color);
+    border-bottom: 1px solid var(--border-color);
+}
+
+.express-benefits h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: var(--primary-color);
+    margin-bottom: 3rem;
+}
+
+.benefits-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.benefit-item {
+    background: var(--white);
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: var(--shadow);
+    text-align: center;
+    transition: transform 0.3s ease;
+    border-top: 4px solid var(--primary-color);
+}
+
+.benefit-item:hover {
+    transform: translateY(-4px);
+}
+
+.benefit-item h3 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+
+.benefit-item p {
+    color: var(--text-gray);
+    line-height: 1.6;
+}
+
+/* About Section - Express Story */
+.about {
+    padding: 4rem 0;
+    background: var(--white);
+}
+
+.about-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    align-items: center;
+}
+
+.about-text h2 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: var(--primary-color);
+    margin-bottom: 2rem;
+}
+
+.about-text p {
+    color: var(--text-gray);
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+}
+
+.about-text ul {
+    color: var(--text-gray);
+    margin: 1.5rem 0;
+    padding-left: 2rem;
+}
+
+.about-text li {
+    margin-bottom: 0.5rem;
+    line-height: 1.6;
+}
+
+.about-image {
+    overflow: hidden;
+    border-radius: 12px;
+    box-shadow: var(--shadow-lg);
+}
+
+.about-image img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+
+/* Hours Section - Express Daily Hours */
+.hours {
+    padding: 4rem 0;
+    background: var(--secondary-color);
+}
+
+.hours h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: var(--primary-color);
+    margin-bottom: 3rem;
+}
+
+.hours-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+}
+
+.hours-info h3,
+.service-info h3 {
+    font-size: 1.75rem;
+    color: var(--primary-color);
+    margin-bottom: 1.5rem;
+}
+
+.hours-highlight {
+    background: var(--white);
+    border-radius: 12px;
+    padding: 2rem;
+    box-shadow: var(--shadow-lg);
+    text-align: center;
+    border: 2px solid var(--primary-color);
+}
+
+.hours-main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+
+.time-large {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--primary-color);
+    display: block;
+}
+
+.days {
+    font-size: 1.1rem;
+    color: var(--text-gray);
+    font-weight: 500;
+}
+
+.hours-note p {
+    color: var(--text-gray);
+    line-height: 1.6;
+}
+
+.service-options {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.service-option {
+    padding: 1.5rem;
+    background: var(--white);
+    border-radius: 12px;
+    box-shadow: var(--shadow);
+}
+
+.service-option.primary {
+    border-left: 4px solid var(--primary-color);
+    background: linear-gradient(135deg, var(--white), var(--secondary-color));
+}
+
+.service-option h4 {
+    color: var(--primary-color);
+    margin-bottom: 0.5rem;
+    font-size: 1.1rem;
+}
+
+.service-option p {
+    color: var(--text-gray);
+    margin-bottom: 0.5rem;
+}
+
+.service-option small {
+    color: var(--text-gray);
+    font-size: 0.85rem;
+}
+
+/* Gallery Section */
+.gallery {
+    padding: 4rem 0;
+    background: var(--white);
+}
+
+.gallery h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: var(--primary-color);
+    margin-bottom: 3rem;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1rem;
+}
+
+.gallery-item {
+    aspect-ratio: 1;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: var(--shadow);
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.gallery-item:hover {
+    transform: scale(1.02);
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.gallery-item:hover img {
+    transform: scale(1.1);
+}
+
+/* Contact Section - Express Focus */
+.contact {
+    padding: 4rem 0;
+    background: var(--secondary-color);
+}
+
+.contact h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: var(--primary-color);
+    margin-bottom: 3rem;
+}
+
+.contact-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    margin-bottom: 3rem;
+}
+
+.contact-info {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+}
+
+.contact-item h3 {
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+    font-size: 1.25rem;
+}
+
+.contact-item p {
+    color: var(--text-gray);
+    line-height: 1.6;
+    margin-bottom: 0.5rem;
+}
+
+.contact-item em {
+    color: var(--primary-color);
+    font-size: 0.9rem;
+}
+
+.contact-item a {
+    color: var(--primary-color);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.contact-item a:hover {
+    text-decoration: underline;
+}
+
+.contact-map {
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: var(--shadow-lg);
+}
+
+.contact-cta {
+    text-align: center;
+    background: var(--white);
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: var(--shadow-lg);
+}
+
+.contact-cta h3 {
+    color: var(--primary-color);
+    margin-bottom: 1.5rem;
+    font-size: 1.75rem;
+}
+
+.contact-buttons {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+/* Buttons - Express Theme */
+.btn {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    text-align: center;
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+    cursor: pointer;
+}
+
+.btn-primary {
+    background: var(--express-bg);
+    color: var(--white);
+}
+
+.btn-primary:hover {
+    transform: translateY(-1px);
+    box-shadow: var(--shadow);
+}
+
+.btn-secondary {
+    background: var(--white);
+    color: var(--primary-color);
+    border-color: var(--white);
+}
+
+.btn-secondary:hover {
+    background: transparent;
+    color: var(--white);
+    border-color: var(--white);
+}
+
+.btn-large {
+    padding: 1rem 2rem;
+    font-size: 1.1rem;
+}
+
+/* Footer - Express Theme */
+.footer {
+    background: var(--text-dark);
+    color: var(--white);
+    padding: 3rem 0 1rem;
+}
+
+.footer-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.footer-brand img {
+    height: 50px;
+    margin-bottom: 1rem;
+    filter: brightness(0) invert(1);
+}
+
+.footer-brand p {
+    color: var(--text-gray);
+    font-size: 0.9rem;
+}
+
+.footer-links h4,
+.footer-contact h4,
+.footer-hours h4 {
+    color: var(--white);
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+}
+
+.footer-links a {
+    display: block;
+    color: var(--text-gray);
+    text-decoration: none;
+    margin-bottom: 0.5rem;
+    font-size: 0.9rem;
+}
+
+.footer-links a:hover {
+    color: var(--primary-light);
+}
+
+.footer-contact p,
+.footer-hours p {
+    color: var(--text-gray);
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+}
+
+.footer-contact a {
+    color: var(--primary-light);
+    text-decoration: none;
+}
+
+.footer-contact a:hover {
+    text-decoration: underline;
+}
+
+.footer-bottom {
+    border-top: 1px solid #374151;
+    padding-top: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-bottom p {
+    color: var(--text-gray);
+    font-size: 0.85rem;
+}
+
+.footer-social {
+    display: flex;
+    gap: 1rem;
+}
+
+.footer-social a {
+    color: var(--primary-light);
+    text-decoration: none;
+    font-size: 0.85rem;
+}
+
+.footer-social a:hover {
+    color: var(--white);
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+    .nav-menu {
+        display: none;
+    }
+    
+    .nav-toggle {
+        display: flex;
+    }
+    
+    .hero-content h1 {
+        font-size: 3rem;
+    }
+    
+    .hero-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .btn {
+        width: 100%;
+        max-width: 300px;
+        text-align: center;
+    }
+    
+    .quick-contact-content {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+    
+    .dishes-conveyor {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+    
+    .deals-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .benefits-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .order-steps {
+        grid-template-columns: 1fr;
+    }
+    
+    .about-content {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+    
+    .hours-content {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+    
+    .contact-content {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+    
+    .contact-info {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+    
+    .contact-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .footer-content {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+    
+    .footer-bottom {
+        flex-direction: column;
+        gap: 1rem;
+    }
+    
+    .footer-social {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-content h1 {
+        font-size: 2.5rem;
+    }
+    
+    .hero-tagline {
+        font-size: 1.5rem;
+    }
+    
+    .section {
+        padding: 2rem 0;
+    }
+    
+    .dish-card {
+        flex: 0 0 280px;
+    }
+    
+    .time-large {
+        font-size: 2rem;
+    }
+}
+
+/* Smooth scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Focus states for accessibility */
+.btn:focus,
+a:focus {
+    outline: 2px solid var(--primary-light);
+    outline-offset: 2px;
+}
+
+/* Loading animations */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.dish-card,
+.deal-card,
+.step,
+.benefit-item {
+    animation: fadeInUp 0.6s ease-out;
+}
+
+/* Express-specific animations */
+@keyframes pulse {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+}
+
+.nav-cta:hover,
+.btn-primary:hover,
+.deal-order-btn:hover {
+    animation: pulse 0.6s ease-in-out;
+}
+
+/* Loading states for images */
+img {
+    transition: opacity 0.3s ease;
+}
+
+img[loading="lazy"] {
+    opacity: 0.8;
+}
+
+img.loaded {
+    opacity: 1;
+}

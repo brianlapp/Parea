@@ -1,0 +1,615 @@
+/* Parea Splash Page Styles */
+
+/* CSS Variables for consistent theming */
+:root {
+    --primary-color: #1e3a8a;      /* Greek blue */
+    --primary-dark: #1e40af;       /* Darker blue for hover */
+    --secondary-color: #f8fafc;    /* Light background */
+    --accent-color: #0ea5e9;       /* Light blue accent */
+    --text-dark: #1f2937;          /* Dark text */
+    --text-gray: #6b7280;          /* Gray text */
+    --white: #ffffff;              /* White */
+    --border-color: #e5e7eb;       /* Light border */
+    --shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+}
+
+/* Reset and base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'DM Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    line-height: 1.6;
+    color: var(--text-dark);
+    background-color: var(--white);
+    overflow-x: hidden;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+/* Hero Section */
+.hero {
+    position: relative;
+    height: 35vh;
+    min-height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    border-top: 5px solid var(--primary-color);
+    border-bottom: 7px solid var(--primary-color);
+}
+
+.hero-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.hero-background img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3));
+    z-index: 2;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 3;
+    text-align: center;
+    color: var(--white);
+    max-width: 700px;
+    padding: 40px 0;
+}
+
+.hero-logo {
+    margin-bottom: 2rem;
+}
+
+.hero-logo img {
+    height: 120px;
+    width: auto;
+    filter: brightness(0) invert(1) drop-shadow(0 2px 8px rgba(0, 0, 0, 0.5));
+    opacity: 100% !important;
+    z-index: 1;
+    position: relative;
+}
+
+/* Desktop padding for hero logo */
+@media (min-width: 768px) {
+    .hero-logo {
+        padding-top: 25px;
+    }
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.hero-content p {
+    font-size: 1.25rem;
+    font-weight: 300;
+    opacity: 0.95;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+/* Location Selector */
+.location-selector {
+    padding: 6rem 0;
+    background: var(--white);
+}
+
+.locations-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 3rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Larger cards on desktop */
+@media (min-width: 1024px) {
+    .locations-grid {
+        grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+        max-width: 1400px;
+    }
+    
+    .location-image {
+        height: 350px;
+    }
+}
+
+.location-card {
+    position: relative;
+    border-radius: 6px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+    border: 3px solid var(--white);
+    box-shadow: 0 8px 25px -5px rgba(0, 0, 0, 0.15);
+}
+
+.location-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+    border-color: var(--white);
+}
+
+.location-image {
+    position: relative;
+    height: 300px;
+    overflow: hidden;
+}
+
+.location-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.6s ease;
+}
+
+.location-card:hover .location-image img {
+    transform: scale(1.1);
+}
+
+.location-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(135deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2));
+    z-index: 2;
+}
+
+.location-content {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 2.5rem 2rem;
+    color: var(--white);
+    z-index: 3;
+    text-align: left;
+}
+
+.location-content h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 0.25rem;
+    text-transform: lowercase;
+    letter-spacing: -0.02em;
+}
+
+.location-subtitle {
+    font-size: 0.85rem;
+    font-weight: 500;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    opacity: 0.8;
+    margin-bottom: 0.5rem;
+}
+
+.location-description {
+    font-size: 1rem;
+    font-weight: 300;
+    opacity: 0.9;
+    margin-bottom: 1.5rem;
+    line-height: 1.4;
+}
+
+.location-btn {
+    display: inline-block;
+    color: var(--primary-color);
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.9rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    padding: 0.75rem 1.5rem;
+    border: 2px solid var(--white);
+    background: var(--white);
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.location-btn:hover {
+    background: transparent;
+    color: var(--white);
+    transform: translateY(-2px);
+    border-color: var(--white);
+}
+
+.location-btn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    transition: left 0.3s ease;
+    z-index: -1;
+}
+
+.location-btn:hover::before {
+    left: 0;
+}
+
+/* The Parea Experience Section */
+.parea-experience {
+    padding: 5rem 0;
+    background: var(--white);
+    text-align: center;
+}
+
+.parea-experience h2 {
+    font-size: 2.75rem;
+    font-weight: 600;
+    color: var(--primary-color);
+    margin-bottom: 3rem;
+    letter-spacing: -0.02em;
+}
+
+.experience-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.experience-content p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    color: var(--text-gray);
+    margin-bottom: 2rem;
+    text-align: left;
+}
+
+.experience-content p:last-child {
+    margin-bottom: 0;
+}
+
+/* Mobile responsive for experience section */
+@media (max-width: 768px) {
+    .parea-experience {
+        padding: 3rem 0;
+    }
+    
+    .parea-experience h2 {
+        font-size: 2.25rem;
+    }
+    
+    .experience-content p {
+        font-size: 1.1rem;
+        line-height: 1.7;
+    }
+}
+
+/* Gallery Section */
+.gallery {
+    padding: 4rem 0;
+    background: #f1f5f9; /* Light blue background */
+}
+
+.gallery h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: var(--primary-color);
+    margin-bottom: 3rem;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.gallery-item {
+    aspect-ratio: 1;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: var(--shadow);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+.gallery-item:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-lg);
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.gallery-item:hover img {
+    transform: scale(1.05);
+}
+
+/* Buttons */
+.btn {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 500;
+    text-align: center;
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+    flex: 1;
+    min-width: 140px;
+}
+
+.btn-primary {
+    background: var(--primary-color);
+    color: var(--white);
+}
+
+.btn-primary:hover {
+    background: var(--primary-dark);
+    transform: translateY(-1px);
+}
+
+.btn-secondary {
+    background: transparent;
+    color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+.btn-secondary:hover {
+    background: var(--primary-color);
+    color: var(--white);
+}
+
+/* Quick Info Section */
+.quick-info {
+    padding: 4rem 0;
+    background: var(--white);
+}
+
+.info-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.info-item {
+    text-align: center;
+    padding: 2rem;
+    background: var(--secondary-color);
+    border-radius: 12px;
+}
+
+.info-item h3 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+
+.info-item p {
+    color: var(--text-gray);
+    line-height: 1.6;
+}
+
+/* Footer */
+.footer {
+    background: var(--text-dark);
+    color: var(--white);
+    padding: 3rem 0 1rem;
+}
+
+.footer-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.footer-brand img {
+    height: 50px;
+    margin-bottom: 1rem;
+    filter: brightness(0) invert(1);
+}
+
+.footer-brand p {
+    color: var(--text-gray);
+    font-size: 0.9rem;
+}
+
+.footer-location h4,
+.footer-social h4 {
+    color: var(--white);
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+}
+
+.footer-location p {
+    color: var(--text-gray);
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+}
+
+.footer-location a {
+    color: var(--accent-color);
+    text-decoration: none;
+}
+
+.footer-location a:hover {
+    text-decoration: underline;
+}
+
+.location-services {
+    font-size: 0.85rem;
+    color: var(--text-gray);
+    margin: 0.75rem 0;
+    line-height: 1.4;
+}
+
+.location-hours {
+    font-size: 0.85rem;
+    color: var(--text-gray);
+    margin-top: 0.5rem;
+}
+
+.social-links {
+    display: flex;
+    gap: 1rem;
+}
+
+.social-links a {
+    color: var(--accent-color);
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+
+.social-links a:hover {
+    color: var(--white);
+}
+
+.footer-bottom {
+    border-top: 1px solid #374151;
+    padding-top: 1rem;
+    text-align: center;
+}
+
+.footer-bottom p {
+    color: var(--text-gray);
+    font-size: 0.85rem;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+    .container {
+        padding: 0 1rem;
+    }
+    
+    .hero-content h1 {
+        font-size: 2.5rem;
+    }
+    
+    .hero-content p {
+        font-size: 1.1rem;
+    }
+    
+    .locations-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+    
+    .location-card {
+        margin: 0;
+    }
+    
+    .location-cta {
+        flex-direction: column;
+    }
+    
+    .btn {
+        flex: none;
+        width: 100%;
+    }
+    
+    .info-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+    
+    .info-item {
+        padding: 1.5rem;
+    }
+    
+    .footer-content {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+        text-align: center;
+    }
+    
+    .social-links {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .location-selector {
+        padding: 2rem 0;
+    }
+    
+    .quick-info {
+        padding: 2rem 0;
+    }
+    
+    .hero-content h1 {
+        font-size: 2rem;
+    }
+    
+    .location-header h2 {
+        font-size: 1.5rem;
+    }
+    
+    .services {
+        justify-content: center;
+    }
+}
+
+/* Animation for smooth loading */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.location-card {
+    animation: fadeInUp 0.6s ease-out;
+}
+
+.location-card:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+/* Focus states for accessibility */
+.btn:focus,
+.location-card:focus {
+    outline: 2px solid var(--accent-color);
+    outline-offset: 2px;
+}
+
+.phone a:focus {
+    outline: 2px solid var(--primary-color);
+    outline-offset: 2px;
+}

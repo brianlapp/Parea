@@ -1,0 +1,142 @@
+{
+  "restaurant": {
+    "id": "a4f25519-04ad-4986-8180-5ce032b9c972",
+    "name": "Parea Orleans",
+    "logo_url": "https://wuufuewpbgciitslfvbl.supabase.co/storage/v1/object/public/restaurant-images/logos/1758121919100-logo",
+    "hero_image_url": "https://wuufuewpbgciitslfvbl.supabase.co/storage/v1/object/public/restaurant-images/hero/1758121920006-hero",
+    "address": "1675 Tenth Line Rd Unit 22A, Ottawa, ON K1E 3P6",
+    "email": "nicolaskonsoulas@gmail.com",
+    "phone": "613-834-1112",
+    "website": "https://www.eatparea.com/en/",
+    "online_ordering_url": "https://pareaauthenticgreek.order-online.ai/#/",
+    "founded_year": "",
+    "story": "Parea – Authentic Greek Restaurant in Orléans\n\nAbout Us\nWelcome to Parea Orléans, where every dish is crafted with love, tradition, and the freshest ingredients. Our family recipes come straight from Greece, perfected over generations and brought to life in the heart of Orléans. From tender souvlaki and homemade dips to fresh salads and grilled seafood, every plate reflects our passion for authentic Greek cuisine.\n\nAt Parea, you can dine in, order take-out, or enjoy delivery, all while experiencing the same warm hospitality we’d offer at our family table. Whether you’re joining us for a casual meal, a special celebration, or simply craving Greek comfort food at home, we’re here to make every bite memorable.\n\nCatering in Orléans\nPlanning a family gathering, office lunch, or special event? Let us bring the flavours of Greece to you. Our Greek catering service in Orléans offers generous portions, authentic recipes, and the quality you expect from Parea.",
+    "owner_quote": "",
+    "about_image_url": "https://wuufuewpbgciitslfvbl.supabase.co/storage/v1/object/public/restaurant-images/about/1758121921030-about",
+    "menu_pdf_url": "https://wuufuewpbgciitslfvbl.supabase.co/storage/v1/object/public/restaurant-pdfs/menus/1758121921705-menu",
+    "status": "submitted",
+    "created_at": "2025-09-17T15:12:24.227607+00:00",
+    "updated_at": "2025-09-17T15:12:24.227607+00:00"
+  },
+  "operations": {
+    "hours": "Monday: Closed\nTuesday: 4–9 p.m.\nWednesday: 4–9 p.m.\nThursday: 4–9 p.m.\nFriday: 4:30–9 p.m.\nSaturday: 4:30–9 p.m.\nSunday 4–9 p.m.",
+    "delivery_areas": "K1C, K1W, K1E, K4A",
+    "delivery_instructions": "Parea Orléans – Pickup, Delivery & Dine-In\nAt Parea in Orléans, enjoying authentic Greek cuisine has never been easier. Whether you’d like to dine in with us, order ahead for a quick pickup, or have your meal delivered through our trusted partners, we’ve got you covered. Online ordering is available to make the process simple and convenient. With dedicated parking spots right outside, picking up your favourite Greek dishes is always fast and stress-free."
+  },
+  "social_media": {
+    "instagram": "https://www.instagram.com/eat_parea/?hl=en",
+    "facebook": "https://www.facebook.com/PareaAuthenticGreek/",
+    "twitter": ""
+  },
+  "popular_dishes": [
+    {
+      "id": "32c83b97-3774-466b-a786-2e07bd9b4a80",
+      "name": "Grilled Kalamata Chicken",
+      "description": "Savor our signature Kalamata Chicken, a juicy grilled chicken breast topped with tangy feta cheese, fresh tomatoes, and briny Kalamata olives. Served with seasoned rice, roasted potatoes, and a medley of fresh vegetables, this dish is a perfect balance of bold Mediterranean flavours and wholesome ingredients. A customer favourite, it’s the taste of Greece brought to life right here in Ottawa.",
+      "image_url": "https://wuufuewpbgciitslfvbl.supabase.co/storage/v1/object/public/restaurant-images/dishes/1758121940077-dish-0",
+      "display_order": 0
+    },
+    {
+      "id": "fcfe83bf-f3e3-4754-abef-2c32f41db801",
+      "name": "Pork & Chicken Gyro",
+      "description": "Enjoy the best of both worlds with our pork and chicken gyro, made with tender, marinated meats slow-roasted on the spit and wrapped in soft pita bread. Topped with fresh tomatoes, onions, and creamy tzatziki, and served with your choice of sides, this classic Greek favourite brings bold flavour and comforting tradition to every bite. A true taste of Greece, right here in Ottawa.",
+      "image_url": "https://wuufuewpbgciitslfvbl.supabase.co/storage/v1/object/public/restaurant-images/dishes/1758121940896-dish-1",
+      "display_order": 1
+    },
+    {
+      "id": "1711ab73-35b7-4dc3-a680-956c22ba759e",
+      "name": "Horiatiki Greek Salad",
+      "description": "Our classic Horiatiki Greek Salad is made with ripe tomatoes, crisp cucumbers, red onions, green peppers, and creamy feta cheese. Light, refreshing, and full of flavour, it’s a timeless dish that showcases the freshness and simplicity of authentic Greek cuisine. Perfect as a starter, side, or healthy meal, this salad brings the vibrant taste of Greece to your table in Ottawa.",
+      "image_url": "https://wuufuewpbgciitslfvbl.supabase.co/storage/v1/object/public/restaurant-images/dishes/1758121941353-dish-2",
+      "display_order": 2
+    },
+    {
+      "id": "c8f03678-6d66-4cc9-abfb-5121b6b4ee64",
+      "name": "Naxos Fish Plate",
+      "description": "Our Naxos Fish Plate features a crispy golden fillet of fish, served with fresh lemon, Paréa salad, seasoned rice, and roasted lemon-garlic potatoes. A perfect balance of crisp, zesty, and hearty flavours, this dish captures the essence of Greek coastal dining — fresh, wholesome, and unforgettable.",
+      "image_url": "https://wuufuewpbgciitslfvbl.supabase.co/storage/v1/object/public/restaurant-images/dishes/1758121941879-dish-3",
+      "display_order": 3
+    },
+    {
+      "id": "2f9d0314-f423-4c78-b0fa-0869736fd5f8",
+      "name": "Calamari",
+      "description": "Crispy, golden, and full of flavour — our Calamari is lightly breaded, perfectly seasoned, and served with cool, creamy tzatziki. This classic Greek appetizer is the perfect start to any meal, combining a satisfying crunch with the refreshing taste of our house-made sauce.",
+      "image_url": "https://wuufuewpbgciitslfvbl.supabase.co/storage/v1/object/public/restaurant-images/dishes/1758121942419-dish-4",
+      "display_order": 4
+    }
+  ],
+  "deals": [
+    {
+      "id": "62fe2566-897e-4aaa-8716-5fdec6ae125b",
+      "title": "Buy 1 Meal, Get 50% Off a Second Meal – Limited-Time Offer in Ottawa",
+      "description": "Enjoy authentic flavours for less! When you buy one regularly priced meal, you’ll receive a second meal of equal or lesser value for 50% off. Perfect for pickup and sharing with family or friends.\n\nBuy 1 regularly priced meal and get 1 of equal or lesser value (before tax) for half price. Limit 1 coupon per person. Not valid with any other offer. Pickup only. Expires December 30, 2025.",
+      "image_url": "https://wuufuewpbgciitslfvbl.supabase.co/storage/v1/object/public/restaurant-images/deals/1758121942941-deal-0",
+      "display_order": 0
+    }
+  ],
+  "photos": [
+    {
+      "id": "48b120f6-7545-40b6-bd55-a3601b9dee26",
+      "image_url": "https://wuufuewpbgciitslfvbl.supabase.co/storage/v1/object/public/restaurant-images/photos/1758121925191-photo-0",
+      "display_order": 0
+    },
+    {
+      "id": "005f712f-c6f4-452b-8d76-a1b60029de6d",
+      "image_url": "https://wuufuewpbgciitslfvbl.supabase.co/storage/v1/object/public/restaurant-images/photos/1758121925744-photo-1",
+      "display_order": 1
+    },
+    {
+      "id": "9374a5e0-8da6-47f7-b8e3-bb65e7fea5dc",
+      "image_url": "https://wuufuewpbgciitslfvbl.supabase.co/storage/v1/object/public/restaurant-images/photos/1758121927277-photo-2",
+      "display_order": 2
+    },
+    {
+      "id": "d553c44f-6a0c-4303-9fa7-d8d574a57ed2",
+      "image_url": "https://wuufuewpbgciitslfvbl.supabase.co/storage/v1/object/public/restaurant-images/photos/1758121928695-photo-3",
+      "display_order": 3
+    },
+    {
+      "id": "3b88fe21-9610-4b85-863b-88a4197dc931",
+      "image_url": "https://wuufuewpbgciitslfvbl.supabase.co/storage/v1/object/public/restaurant-images/photos/1758121930026-photo-4",
+      "display_order": 4
+    },
+    {
+      "id": "022b4a71-9396-48e0-aae0-31730051accf",
+      "image_url": "https://wuufuewpbgciitslfvbl.supabase.co/storage/v1/object/public/restaurant-images/photos/1758121931373-photo-5",
+      "display_order": 5
+    },
+    {
+      "id": "5c78689a-ae92-4f2d-9a8d-ad1e3fe23551",
+      "image_url": "https://wuufuewpbgciitslfvbl.supabase.co/storage/v1/object/public/restaurant-images/photos/1758121932628-photo-6",
+      "display_order": 6
+    },
+    {
+      "id": "522a0238-0cfe-4e7a-974b-ad6fa816d563",
+      "image_url": "https://wuufuewpbgciitslfvbl.supabase.co/storage/v1/object/public/restaurant-images/photos/1758121934138-photo-7",
+      "display_order": 7
+    },
+    {
+      "id": "3b27ca49-521f-4db4-8b91-a76426d0a68e",
+      "image_url": "https://wuufuewpbgciitslfvbl.supabase.co/storage/v1/object/public/restaurant-images/photos/1758121935841-photo-8",
+      "display_order": 8
+    },
+    {
+      "id": "63e9031e-a921-4c36-89d1-9c2382457a14",
+      "image_url": "https://wuufuewpbgciitslfvbl.supabase.co/storage/v1/object/public/restaurant-images/photos/1758121937926-photo-9",
+      "display_order": 9
+    }
+  ],
+  "additional_comments": "For the Orléans location (3712 Innes Rd, Orléans, ON K1C 1T1), we’ll need to make sure the website highlights the following services clearly: dine-in, pickup, delivery, online ordering, and table reservations. Since we’re building one website that covers both Orléans and Parea Express, it’s important to keep the distinction obvious so customers don’t get confused when browsing menus or services.\n\nWe’d also like a dedicated Catering section with this text:\n\nExperience the best of authentic Greek cuisine with our custom-made catering options at Parea. Perfect for any event, our catering starts at just $18.95 per person, with a minimum requirement of 10 guests. Whether you prefer to dine in our cozy dining room or enjoy a convenient take-out option, we’re here to accommodate your needs. Our team is dedicated to ensuring your event is a memorable one, tailored to your preferences with the finest Greek dishes Ottawa has to offer. Let us bring the vibrant flavors of Greece to your next gathering! Contact us at (613) 834-1112 for more information.\n\nLastly, please include a Table Reservation section for Orléans. Currently, reservations are handled through this link: https://www.eatparea.com/en/book-a-table/\n. We can either keep this setup or build a smoother reservation option directly into the new site.",
+  "integration_instructions": {
+    "branding": "Use restaurant.logo_url for brand logo placement throughout the site",
+    "hero_image": "Use restaurant.hero_image_url as a banner/header image on your homepage for visual impact",
+    "ordering_platform": "Use restaurant.online_ordering_url for all 'Order Now' and 'View Menu' buttons",
+    "menu_display": "Use restaurant.menu_pdf_url for downloadable menu links",
+    "deals_promotion": "Feature deals prominently on homepage and dedicated deals page",
+    "note": "The online_ordering_url connects to your unified ordering platform backend"
+  },
+  "export_metadata": {
+    "exported_at": "2025-09-17T19:31:56.141Z",
+    "export_version": "1.1"
+  }
+}
