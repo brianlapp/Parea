@@ -430,6 +430,12 @@ body {
     background: var(--white);
 }
 
+.deals .container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
 .deals h2 {
     text-align: center;
     font-size: 2.5rem;
