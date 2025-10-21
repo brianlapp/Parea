@@ -387,7 +387,7 @@ window.PareaOrleans = {
     
     // Open online ordering
     orderOnline: function() {
-        window.open('https://pareaauthenticgreek.order-online.ai/#/', '_blank');
+        window.open('https://ordereast.eatparea.com/', '_blank');
     },
     
     // Call restaurant

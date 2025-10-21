@@ -305,7 +305,7 @@ document.addEventListener('DOMContentLoaded', function() {
         // Ctrl/Cmd + O = Quick order
         if ((e.ctrlKey || e.metaKey) && e.key === 'o') {
             e.preventDefault();
-            window.open('https://pareaauthenticgreek.order-online.ai/#/', '_blank');
+            window.open('https://orderwest.eatparea.com/', '_blank');
         }
         
         // Ctrl/Cmd + P = Call phone
@@ -359,7 +359,7 @@ document.addEventListener('DOMContentLoaded', function() {
 window.PareaExpress = {
     // Quick order function
     orderNow: function() {
-        window.open('https://pareaauthenticgreek.order-online.ai/#/', '_blank');
+        window.open('https://orderwest.eatparea.com/', '_blank');
     },
     
     // Call restaurant
